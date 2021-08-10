@@ -1,0 +1,21 @@
+h1{
+    text-align: center;
+}
+
+div {
+    display:flex;
+    border: 1px solid black;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-grow: 10;
+    align-items: center;
+}
+
+.selectors {
+    border: 1px solid black;
+    
+}
+
+button {
+    cursor: pointer;
+}
