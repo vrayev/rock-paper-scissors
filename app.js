@@ -20,22 +20,55 @@ function computerPlay(min, max){
     if (choice === "rock"){
      if (computerSelection === paper) {
          console.log("Computer chose Paper, You Lose!");
+         document.getElementById('resultMessage').innerHTML="Computer chose Paper, You Lose!";
+         playerScore = playerScore - 1;
+         cpuScore = cpuScore + 1;
+         document.getElementById('playerScore').innerHTML="Player Score: " + playerScore;
+         document.getElementById('cpuScore').innerHTML="Computer Score: " + cpuScore;
      } else if (computerSelection === scissors){
          console.log("Computer chose Scissors, You Win!");
-     } else console.log("You both chose Rock! It's a tie!");
-
+         document.getElementById('resultMessage').innerHTML="Computer chose Scissors, You Win!";
+         playerScore = playerScore + 1;
+         cpuScore = cpuScore - 1;
+         document.getElementById('playerScore').innerHTML="Player Score: " + playerScore;
+         document.getElementById('cpuScore').innerHTML="Computer Score: " + cpuScore;
+     } else {console.log("You both chose Rock! It's a tie!");
+     document.getElementById('resultMessage').innerHTML="You both chose Rock! It's a tie!";
+    }
     }else if (choice === "paper"){
      if (computerSelection === rock) {
          console.log("Computer chose Rock, You Win!"); 
+         document.getElementById('resultMessage').innerHTML="Computer chose Rock, You Win!";
+         playerScore = playerScore + 1;
+         cpuScore = cpuScore - 1;
+         document.getElementById('playerScore').innerHTML="Player Score: " + playerScore;
+         document.getElementById('cpuScore').innerHTML="Computer Score: " + cpuScore;
      } else if (computerSelection === scissors){
          console.log("Computer chose Scissors, You Lose!"); 
-     } else console.log("You both chose Paper! It's a tie!");
-       
+         document.getElementById('resultMessage').innerHTML="Computer chose Scissors, You Lose!";
+         playerScore = playerScore - 1;
+         cpuScore = cpuScore + 1;
+         document.getElementById('playerScore').innerHTML="Player Score: " + playerScore;
+         document.getElementById('cpuScore').innerHTML="Computer Score: " + cpuScore;
+     } else {console.log("You both chose Paper! It's a tie!");
+     document.getElementById('resultMessage').innerHTML="You both chose Paper! It's a tie!";
+    }
     }else 
      if (computerSelection === rock) {
         console.log("Computer chose Rock, You lose!");
+        document.getElementById('resultMessage').innerHTML="Computer chose Rock, You lose!";
+        playerScore = playerScore - 1;
+         cpuScore = cpuScore + 1;
+         document.getElementById('playerScore').innerHTML="Player Score: " + playerScore;
+         document.getElementById('cpuScore').innerHTML="Computer Score: " + cpuScore;
      } else if (computerSelection === paper){
         console.log("Computer chose Paper, You win!");
-     } else console.log("You both chose Scissors! It's a tie!");
+        document.getElementById('resultMessage').innerHTML="Computer chose Paper, You win!";
+        playerScore = playerScore + 1;
+         cpuScore = cpuScore - 1;
+         document.getElementById('playerScore').innerHTML="Player Score: " + playerScore;
+         document.getElementById('cpuScore').innerHTML="Computer Score: " + cpuScore;
+     } else {console.log("You both chose Scissors! It's a tie!");
+     document.getElementById('resultMessage').innerHTML="You both chose Scissors! It's a tie!";
 }
-
+}
