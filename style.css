@@ -4,16 +4,19 @@ h1{
 
 div {
     display:flex;
-    border: 1px solid black;
     flex-direction: row;
     justify-content: space-evenly;
     flex-grow: 10;
     align-items: center;
+    border: 3px solid rgba(14, 67, 165, 0.582);
+    outline: 2px outset rgb(70, 70, 112);
+    box-shadow: 0 0 0 5px skyblue;
 }
 
 .selectors {
-    border: 1px solid black;
-    
+    border: 3px solid rgba(14, 67, 165, 0.582);
+    outline: 2px outset rgb(70, 70, 112);
+    box-shadow: 0 0 0 5px skyblue;
 }
 
 button {
