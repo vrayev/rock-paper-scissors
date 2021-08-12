@@ -32,7 +32,7 @@ function winner(){
      if (computerSelection === paper) {
          console.log("Computer chose Paper, You Lose!");
          document.getElementById('resultMessage').innerHTML="Computer chose Paper, You Lose!";
-         playerScore = playerScore - 1;
+         
          cpuScore = cpuScore + 1;
          document.getElementById('playerScore').innerHTML="Player Score: " + playerScore;
          document.getElementById('cpuScore').innerHTML="Computer Score: " + cpuScore;
@@ -43,7 +43,7 @@ function winner(){
          console.log("Computer chose Scissors, You Win!");
          document.getElementById('resultMessage').innerHTML="Computer chose Scissors, You Win!";
          playerScore = playerScore + 1;
-         cpuScore = cpuScore - 1;
+         
          document.getElementById('playerScore').innerHTML="Player Score: " + playerScore;
          document.getElementById('cpuScore').innerHTML="Computer Score: " + cpuScore;
          if (cpuScore === 5 || playerScore === 5){
@@ -57,7 +57,7 @@ function winner(){
          console.log("Computer chose Rock, You Win!"); 
          document.getElementById('resultMessage').innerHTML="Computer chose Rock, You Win!";
          playerScore = playerScore + 1;
-         cpuScore = cpuScore - 1;
+         
          document.getElementById('playerScore').innerHTML="Player Score: " + playerScore;
          document.getElementById('cpuScore').innerHTML="Computer Score: " + cpuScore;
          if (cpuScore === 5 || playerScore === 5){
@@ -66,7 +66,7 @@ function winner(){
      } else if (computerSelection === scissors){
          console.log("Computer chose Scissors, You Lose!"); 
          document.getElementById('resultMessage').innerHTML="Computer chose Scissors, You Lose!";
-         playerScore = playerScore - 1;
+         
          cpuScore = cpuScore + 1;
          document.getElementById('playerScore').innerHTML="Player Score: " + playerScore;
          document.getElementById('cpuScore').innerHTML="Computer Score: " + cpuScore;
@@ -80,7 +80,7 @@ function winner(){
      if (computerSelection === rock) {
         console.log("Computer chose Rock, You lose!");
         document.getElementById('resultMessage').innerHTML="Computer chose Rock, You lose!";
-        playerScore = playerScore - 1;
+        
          cpuScore = cpuScore + 1;
          document.getElementById('playerScore').innerHTML="Player Score: " + playerScore;
          document.getElementById('cpuScore').innerHTML="Computer Score: " + cpuScore;
@@ -91,7 +91,7 @@ function winner(){
         console.log("Computer chose Paper, You win!");
         document.getElementById('resultMessage').innerHTML="Computer chose Paper, You win!";
         playerScore = playerScore + 1;
-         cpuScore = cpuScore - 1;
+         
          document.getElementById('playerScore').innerHTML="Player Score: " + playerScore;
          document.getElementById('cpuScore').innerHTML="Computer Score: " + cpuScore;
          if (cpuScore === 5 || playerScore === 5){
